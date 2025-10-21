@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evr_dictionary>
+	<header mission_name="HelloWorldDeployment.HelloWorldDeployment" version="1.0.0" schema_version="1.0"/>
+	<evr_definitions>
+		<evr name="CdhCore.cmdDisp.OpCodeRegistered" code="16777216"/>
+		<evr name="CdhCore.cmdDisp.OpCodeDispatched" code="16777217">
+			<description>Op code dispatched event</description>
+		</evr>
+		<evr name="CdhCore.cmdDisp.OpCodeCompleted" code="16777218">
+			<description>Op code completed event</description>
+		</evr>
+		<evr name="CdhCore.cmdDisp.OpCodeError" code="16777219">
+			<description>Op code completed with error event</description>
+		</evr>
+		<evr name="CdhCore.cmdDisp.MalformedCommand" code="16777220">
+			<description>Received a malformed command packet</description>
+		</evr>
+		<evr name="CdhCore.cmdDisp.InvalidCommand" code="16777221">
+			<description>Received an invalid opcode</description>
+		</evr>
+		<evr name="CdhCore.cmdDisp.TooManyCommands" code="16777222">
+			<description>Exceeded the number of commands that can be simultaneously executed</description>
+		</evr>
+		<evr name="CdhCore.cmdDisp.NoOpReceived" code="16777223">
+			<description>The command dispatcher has successfully received a NO-OP command</description>
+		</evr>
+		<evr name="CdhCore.cmdDisp.NoOpStringReceived" code="16777224">
+			<description>The command dispatcher has successfully received a NO-OP command from GUI with a string</description>
+		</evr>
+		<evr name="CdhCore.cmdDisp.TestCmd1Args" code="16777225">
+			<description>This log event message returns the TEST_CMD_1 arguments.</description>
+		</evr>
+		<evr name="CdhCore.cmdDisp.OpCodeReregistered" code="16777226">
+			<description>Op code reregistered event</description>
+		</evr>
+		<evr name="CdhCore.events.SEVERITY_FILTER_STATE" code="16781312">
+			<description>Dump severity filter state</description>
+		</evr>
+		<evr name="CdhCore.events.ID_FILTER_ENABLED" code="16781313">
+			<description>Indicate ID is filtered</description>
+		</evr>
+		<evr name="CdhCore.events.ID_FILTER_LIST_FULL" code="16781314">
+			<description>Attempted to add ID to full ID filter ID</description>
+		</evr>
+		<evr name="CdhCore.events.ID_FILTER_REMOVED" code="16781315">
+			<description>Removed an ID from the filter</description>
+		</evr>
+		<evr name="CdhCore.events.ID_FILTER_NOT_FOUND" code="16781316">
+			<description>ID not in filter</description>
+		</evr>
+		<evr name="CdhCore.health.HLTH_PING_WARN" code="16785408">
+			<description>Warn that a ping target is longer than the warning value</description>
+		</evr>
+		<evr name="CdhCore.health.HLTH_PING_LATE" code="16785409">
+			<description>Declare FATAL since task is no longer responding</description>
+		</evr>
+		<evr name="CdhCore.health.HLTH_PING_WRONG_KEY" code="16785410">
+			<description>Declare FATAL since task is no longer responding</description>
+		</evr>
+		<evr name="CdhCore.health.HLTH_CHECK_ENABLE" code="16785411">
+			<description>Report checking turned on or off</description>
+		</evr>
+		<evr name="CdhCore.health.HLTH_CHECK_PING" code="16785412">
+			<description>Report a particular entry on or off</description>
+		</evr>
+		<evr name="CdhCore.health.HLTH_CHECK_LOOKUP_ERROR" code="16785413">
+			<description>Entry was not found</description>
+		</evr>
+		<evr name="CdhCore.health.HLTH_PING_UPDATED" code="16785414">
+			<description>Report changed ping</description>
+		</evr>
+		<evr name="CdhCore.health.HLTH_PING_INVALID_VALUES" code="16785415">
+			<description>Report changed ping</description>
+		</evr>
+		<evr name="CdhCore.version.FrameworkVersion" code="16789504">
+			<description>Version of the git repository.</description>
+		</evr>
+		<evr name="CdhCore.version.ProjectVersion" code="16789505">
+			<description>Version of the git repository.</description>
+		</evr>
+		<evr name="CdhCore.version.LibraryVersions" code="16789506">
+			<description>Version of the git repository.</description>
+		</evr>
+		<evr name="CdhCore.version.CustomVersions" code="16789507">
+			<description>Version of the git repository.</description>
+		</evr>
+		<evr name="CdhCore.fatalAdapter.AF_ASSERT_0" code="16797696">
+			<description>An assert happened</description>
+		</evr>
+		<evr name="CdhCore.fatalAdapter.AF_ASSERT_1" code="16797697">
+			<description>An assert happened</description>
+		</evr>
+		<evr name="CdhCore.fatalAdapter.AF_ASSERT_2" code="16797698">
+			<description>An assert happened</description>
+		</evr>
+		<evr name="CdhCore.fatalAdapter.AF_ASSERT_3" code="16797699">
+			<description>An assert happened</description>
+		</evr>
+		<evr name="CdhCore.fatalAdapter.AF_ASSERT_4" code="16797700">
+			<description>An assert happened</description>
+		</evr>
+		<evr name="CdhCore.fatalAdapter.AF_ASSERT_5" code="16797701">
+			<description>An assert happened</description>
+		</evr>
+		<evr name="CdhCore.fatalAdapter.AF_ASSERT_6" code="16797702">
+			<description>An assert happened</description>
+		</evr>
+		<evr name="CdhCore.fatalAdapter.AF_UNEXPECTED_ASSERT" code="16797703">
+			<description>An unexpected assert happened</description>
+		</evr>
+		<evr name="ComCcsds.comQueue.QueueOverflow" code="33554432">
+			<description>Queue overflow event</description>
+		</evr>
+		<evr name="ComCcsds.frameAccumulator.NoBufferAvailable" code="33558528">
+			<description>An error occurred while deserializing a packet</description>
+		</evr>
+		<evr name="ComCcsds.commsBufferManager.NoBuffsAvailable" code="33562624">
+			<description>The BufferManager was unable to allocate a requested buffer</description>
+		</evr>
+		<evr name="ComCcsds.commsBufferManager.NullEmptyBuffer" code="33562625">
+			<description>The buffer manager received a null pointer and zero-sized buffer as a return. Probably undetected failed buffer allocation</description>
+		</evr>
+		<evr name="ComCcsds.fprimeRouter.SerializationError" code="33566720">
+			<description>An error occurred while serializing a com buffer</description>
+		</evr>
+		<evr name="ComCcsds.fprimeRouter.DeserializationError" code="33566721">
+			<description>An error occurred while deserializing a packet</description>
+		</evr>
+		<evr name="ComCcsds.tcDeframer.InvalidSpacecraftId" code="33574912">
+			<description>Deframing received an invalid SCID</description>
+		</evr>
+		<evr name="ComCcsds.tcDeframer.InvalidFrameLength" code="33574913">
+			<description>Deframing received an invalid frame length</description>
+		</evr>
+		<evr name="ComCcsds.tcDeframer.InvalidVcId" code="33574914">
+			<description>Deframing received an invalid VCID</description>
+		</evr>
+		<evr name="ComCcsds.tcDeframer.InvalidCrc" code="33574915">
+			<description>Deframing received an invalid checksum</description>
+		</evr>
+		<evr name="ComCcsds.spacePacketDeframer.InvalidLength" code="33579008">
+			<description>Deframing received an invalid frame length</description>
+		</evr>
+		<evr name="ComCcsds.apidManager.UnexpectedSequenceCount" code="33591296">
+			<description>Deframing received an unexpected sequence count</description>
+		</evr>
+		<evr name="ComCcsds.apidManager.ApidTableFull" code="33591297">
+			<description>Received an unregistered APID</description>
+		</evr>
+		<evr name="DataProducts.dpCat.DirectoryOpenError" code="67108864">
+			<description>Error opening directory</description>
+		</evr>
+		<evr name="DataProducts.dpCat.ProcessingDirectory" code="67108865">
+			<description>Processing directory</description>
+		</evr>
+		<evr name="DataProducts.dpCat.ProcessingFile" code="67108866">
+			<description>Processing directory</description>
+		</evr>
+		<evr name="DataProducts.dpCat.ProcessingDirectoryComplete" code="67108867">
+			<description>Directory Processing complete</description>
+		</evr>
+		<evr name="DataProducts.dpCat.CatalogBuildComplete" code="67108868">
+			<description>Catalog processing complete</description>
+		</evr>
+		<evr name="DataProducts.dpCat.CatalogXmitStarted" code="67108874">
+			<description>Catalog transmission started</description>
+		</evr>
+		<evr name="DataProducts.dpCat.CatalogXmitStopped" code="67108875">
+			<description>Catalog transmission stopped</description>
+		</evr>
+		<evr name="DataProducts.dpCat.CatalogXmitCompleted" code="67108876">
+			<description>Catalog transmission completed</description>
+		</evr>
+		<evr name="DataProducts.dpCat.SendingProduct" code="67108877">
+			<description>Sending product</description>
+		</evr>
+		<evr name="DataProducts.dpCat.ProductComplete" code="67108878">
+			<description>Product send complete</description>
+		</evr>
+		<evr name="DataProducts.dpCat.ComponentNotInitialized" code="67108884">
+			<description>Component not initialized error</description>
+		</evr>
+		<evr name="DataProducts.dpCat.ComponentNoMemory" code="67108885">
+			<description>Component didn't get memory error</description>
+		</evr>
+		<evr name="DataProducts.dpCat.CatalogFull" code="67108886">
+			<description>Catalog is full</description>
+		</evr>
+		<evr name="DataProducts.dpCat.FileOpenError" code="67108887">
+			<description>Error opening file</description>
+		</evr>
+		<evr name="DataProducts.dpCat.FileReadError" code="67108888">
+			<description>Error opening file</description>
+		</evr>
+		<evr name="DataProducts.dpCat.FileHdrError" code="67108889">
+			<description>Error reading header data from DP file</description>
+		</evr>
+		<evr name="DataProducts.dpCat.FileHdrDesError" code="67108890">
+			<description>Error deserializing header data</description>
+		</evr>
+		<evr name="DataProducts.dpCat.DpInsertError" code="67108891">
+			<description>Error inserting entry into list</description>
+		</evr>
+		<evr name="DataProducts.dpCat.DpDuplicate" code="67108892">
+			<description>Error inserting entry into list</description>
+		</evr>
+		<evr name="DataProducts.dpCat.DpCatalogFull" code="67108893">
+			<description>Error inserting entry into list</description>
+		</evr>
+		<evr name="DataProducts.dpCat.DpXmitInProgress" code="67108894">
+			<description>Tried to build catalog while downlink process active</description>
+		</evr>
+		<evr name="DataProducts.dpCat.FileSizeError" code="67108895">
+			<description>Error getting file size</description>
+		</evr>
+		<evr name="DataProducts.dpCat.NoDpMemory" code="67108896"/>
+		<evr name="DataProducts.dpCat.NotInitialized" code="67108897"/>
+		<evr name="DataProducts.dpCat.XmitNotActive" code="67108898"/>
+		<evr name="DataProducts.dpCat.StateFileOpenError" code="67108899"/>
+		<evr name="DataProducts.dpCat.StateFileReadError" code="67108900"/>
+		<evr name="DataProducts.dpCat.StateFileTruncated" code="67108901"/>
+		<evr name="DataProducts.dpCat.NoStateFileSpecified" code="67108902"/>
+		<evr name="DataProducts.dpCat.StateFileWriteError" code="67108903"/>
+		<evr name="DataProducts.dpCat.NoStateFile" code="67108904"/>
+		<evr name="DataProducts.dpCat.DpFileXmitError" code="67108905"/>
+		<evr name="DataProducts.dpCat.DpFileSendError" code="67108906"/>
+		<evr name="DataProducts.dpMgr.BufferAllocationFailed" code="67112960">
+			<description>Buffer allocation failed</description>
+		</evr>
+		<evr name="DataProducts.dpWriter.InvalidBuffer" code="67117056">
+			<description>Received buffer is invalid</description>
+		</evr>
+		<evr name="DataProducts.dpWriter.BufferTooSmallForPacket" code="67117057">
+			<description>Received buffer is too small to hold a data product packet</description>
+		</evr>
+		<evr name="DataProducts.dpWriter.InvalidHeaderHash" code="67117058">
+			<description>The received buffer has an invalid header hash</description>
+		</evr>
+		<evr name="DataProducts.dpWriter.InvalidHeader" code="67117059">
+			<description>Error occurred when deserializing the packet header</description>
+		</evr>
+		<evr name="DataProducts.dpWriter.BufferTooSmallForData" code="67117060">
+			<description>Received buffer is too small to hold the data specified in the header</description>
+		</evr>
+		<evr name="DataProducts.dpWriter.FileOpenError" code="67117061">
+			<description>An error occurred when opening a file</description>
+		</evr>
+		<evr name="DataProducts.dpWriter.FileWriteError" code="67117062">
+			<description>An error occurred when writing to a file</description>
+		</evr>
+		<evr name="DataProducts.dpWriter.FileWritten" code="67117063">
+			<description>File written</description>
+		</evr>
+		<evr name="DataProducts.dpBufferManager.NoBuffsAvailable" code="67121152">
+			<description>The BufferManager was unable to allocate a requested buffer</description>
+		</evr>
+		<evr name="DataProducts.dpBufferManager.NullEmptyBuffer" code="67121153">
+			<description>The buffer manager received a null pointer and zero-sized buffer as a return. Probably undetected failed buffer allocation</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.BadChecksum" code="83886080">
+			<description>During receipt of a file, the computed checksum value did not match the stored value</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.FileOpenError" code="83886081">
+			<description>An error occurred opening a file</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.FileReceived" code="83886082">
+			<description>The File Uplink component successfully received a file</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.FileWriteError" code="83886083">
+			<description>An error occurred writing to a file</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.InvalidReceiveMode" code="83886084">
+			<description>The File Uplink component received a packet with a type that was invalid for the current receive mode</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.PacketOutOfBounds" code="83886085">
+			<description>During receipt of a file, the File Uplink component encountered a packet with offset and size out of bounds for the current file</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.PacketOutOfOrder" code="83886086">
+			<description>The File Uplink component encountered an out-of-order packet during file receipt</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.PacketDuplicate" code="83886087">
+			<description>The File Uplink component encountered a duplicate packet during file receipt</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.UplinkCanceled" code="83886088">
+			<description>The File Uplink component received a CANCEL packet</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.DecodeError" code="83886089">
+			<description>Error decoding file packet</description>
+		</evr>
+		<evr name="FileHandling.fileUplink.InvalidPacketReceived" code="83886090">
+			<description>Invalid packet received</description>
+		</evr>
+		<evr name="FileHandling.fileDownlink.FileOpenError" code="83890176">
+			<description>An error occurred opening a file</description>
+		</evr>
+		<evr name="FileHandling.fileDownlink.FileReadError" code="83890177">
+			<description>An error occurred reading a file</description>
+		</evr>
+		<evr name="FileHandling.fileDownlink.FileSent" code="83890178">
+			<description>The File Downlink component successfully sent a file</description>
+		</evr>
+		<evr name="FileHandling.fileDownlink.DownlinkCanceled" code="83890179">
+			<description>The File Downlink component canceled downlink of a file</description>
+		</evr>
+		<evr name="FileHandling.fileDownlink.DownlinkTimeout" code="83890180">
+			<description>The File Downlink component has detected a timeout. Downlink has been canceled.</description>
+		</evr>
+		<evr name="FileHandling.fileDownlink.DownlinkPartialWarning" code="83890181">
+			<description>The File Downlink component has detected a timeout. Downlink has been canceled.</description>
+		</evr>
+		<evr name="FileHandling.fileDownlink.DownlinkPartialFail" code="83890182">
+			<description>The File Downlink component has detected a timeout. Downlink has been canceled.</description>
+		</evr>
+		<evr name="FileHandling.fileDownlink.SendDataFail" code="83890183">
+			<description>The File Downlink component generated an error when trying to send a data packet.</description>
+		</evr>
+		<evr name="FileHandling.fileDownlink.SendStarted" code="83890184">
+			<description>The File Downlink component started a file download.</description>
+		</evr>
+		<evr name="FileHandling.fileManager.DirectoryCreateError" code="83894272">
+			<description>An error occurred while attempting to create a directory</description>
+		</evr>
+		<evr name="FileHandling.fileManager.DirectoryRemoveError" code="83894273">
+			<description>An error occurred while attempting to remove a directory</description>
+		</evr>
+		<evr name="FileHandling.fileManager.FileMoveError" code="83894274">
+			<description>An error occurred while attempting to move a file</description>
+		</evr>
+		<evr name="FileHandling.fileManager.FileRemoveError" code="83894275">
+			<description>An error occurred while attempting to remove a file</description>
+		</evr>
+		<evr name="FileHandling.fileManager.ShellCommandFailed" code="83894276">
+			<description>The File System component executed a shell command that returned status non-zero</description>
+		</evr>
+		<evr name="FileHandling.fileManager.AppendFileFailed" code="83894277">
+			<description>The File System component returned status non-zero when trying to append 2 files together</description>
+		</evr>
+		<evr name="FileHandling.fileManager.AppendFileSucceeded" code="83894278">
+			<description>The File System component appended 2 files without error</description>
+		</evr>
+		<evr name="FileHandling.fileManager.ShellCommandSucceeded" code="83894279">
+			<description>The File System component executed a shell command that returned status zero</description>
+		</evr>
+		<evr name="FileHandling.fileManager.CreateDirectorySucceeded" code="83894280">
+			<description>The File System component created a new directory without error</description>
+		</evr>
+		<evr name="FileHandling.fileManager.RemoveDirectorySucceeded" code="83894281">
+			<description>The File System component deleted and existing directory without error</description>
+		</evr>
+		<evr name="FileHandling.fileManager.MoveFileSucceeded" code="83894282">
+			<description>The File System component moved a file to a new location without error</description>
+		</evr>
+		<evr name="FileHandling.fileManager.RemoveFileSucceeded" code="83894283">
+			<description>The File System component deleted an existing file without error</description>
+		</evr>
+		<evr name="FileHandling.fileManager.AppendFileStarted" code="83894284">
+			<description>The File System component appended 2 files without error</description>
+		</evr>
+		<evr name="FileHandling.fileManager.ShellCommandStarted" code="83894285">
+			<description>The File System component began executing a shell command</description>
+		</evr>
+		<evr name="FileHandling.fileManager.CreateDirectoryStarted" code="83894286">
+			<description>The File System component began creating a new directory</description>
+		</evr>
+		<evr name="FileHandling.fileManager.RemoveDirectoryStarted" code="83894287">
+			<description>The File System component began deleting a directory</description>
+		</evr>
+		<evr name="FileHandling.fileManager.MoveFileStarted" code="83894288">
+			<description>The File System component began moving a file to a new location</description>
+		</evr>
+		<evr name="FileHandling.fileManager.RemoveFileStarted" code="83894289">
+			<description>The File System component began deleting an existing file</description>
+		</evr>
+		<evr name="FileHandling.fileManager.FileSizeSucceeded" code="83894290">
+			<description>File size response</description>
+		</evr>
+		<evr name="FileHandling.fileManager.FileSizeError" code="83894291">
+			<description>Failed to get file size</description>
+		</evr>
+		<evr name="FileHandling.fileManager.FileSizeStarted" code="83894292">
+			<description>Checking file size</description>
+		</evr>
+		<evr name="FileHandling.prmDb.PrmIdNotFound" code="83898368">
+			<description>Parameter ID not found in database.</description>
+		</evr>
+		<evr name="FileHandling.prmDb.PrmIdUpdated" code="83898369">
+			<description>Parameter ID updated in database</description>
+		</evr>
+		<evr name="FileHandling.prmDb.PrmDbFull" code="83898370">
+			<description>Parameter database is full</description>
+		</evr>
+		<evr name="FileHandling.prmDb.PrmIdAdded" code="83898371">
+			<description>Parameter ID added to database</description>
+		</evr>
+		<evr name="FileHandling.prmDb.PrmFileWriteError" code="83898372">
+			<description>Failed to write parameter file</description>
+		</evr>
+		<evr name="FileHandling.prmDb.PrmFileSaveComplete" code="83898373">
+			<description>Save of parameter file completed</description>
+		</evr>
+		<evr name="FileHandling.prmDb.PrmFileReadError" code="83898374">
+			<description>Failed to read parameter file</description>
+		</evr>
+		<evr name="FileHandling.prmDb.PrmFileLoadComplete" code="83898375">
+			<description>Load of parameter file completed</description>
+		</evr>
+		<evr name="HelloWorldDeployment.rateGroup1.RateGroupStarted" code="268439552">
+			<description>Informational event that rate group has started</description>
+		</evr>
+		<evr name="HelloWorldDeployment.rateGroup1.RateGroupCycleSlip" code="268439553">
+			<description>Warning event that rate group has had a cycle slip</description>
+		</evr>
+		<evr name="HelloWorldDeployment.rateGroup2.RateGroupStarted" code="268443648">
+			<description>Informational event that rate group has started</description>
+		</evr>
+		<evr name="HelloWorldDeployment.rateGroup2.RateGroupCycleSlip" code="268443649">
+			<description>Warning event that rate group has had a cycle slip</description>
+		</evr>
+		<evr name="HelloWorldDeployment.rateGroup3.RateGroupStarted" code="268447744">
+			<description>Informational event that rate group has started</description>
+		</evr>
+		<evr name="HelloWorldDeployment.rateGroup3.RateGroupCycleSlip" code="268447745">
+			<description>Warning event that rate group has had a cycle slip</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_SequenceLoaded" code="268451840">
+			<description>Sequence file was successfully loaded.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_SequenceCanceled" code="268451841">
+			<description>A command sequence was successfully canceled.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_FileReadError" code="268451842">
+			<description>The Sequence File Loader could not read the sequence file.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_FileInvalid" code="268451843">
+			<description>The sequence file format was invalid.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_RecordInvalid" code="268451844">
+			<description>The format of a command record was invalid.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_FileSizeError" code="268451845">
+			<description>The sequence file was too large.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_FileNotFound" code="268451846">
+			<description>The sequence file was not found</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_FileCrcFailure" code="268451847">
+			<description>The sequence file validation failed</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_CommandComplete" code="268451848">
+			<description>The Command Sequencer issued a command and received a success status in return.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_SequenceComplete" code="268451849">
+			<description>A command sequence successfully completed.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_CommandError" code="268451850">
+			<description>The Command Sequencer issued a command and received an error status in return.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_InvalidMode" code="268451851">
+			<description>The Command Sequencer received a command that was invalid for its current mode.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_RecordMismatch" code="268451852">
+			<description>Number of records in header doesn't match number in file</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_TimeBaseMismatch" code="268451853">
+			<description>The running time base doesn't match the time base in the sequence files</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_TimeContextMismatch" code="268451854">
+			<description>The running time base doesn't match the time base in the sequence files</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_PortSequenceStarted" code="268451855">
+			<description>A local port request to run a sequence was started</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_UnexpectedCompletion" code="268451856">
+			<description>A command status came back when no sequence was running</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_ModeSwitched" code="268451857">
+			<description>Switched step mode</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_NoSequenceActive" code="268451858">
+			<description>A sequence related command came with no active sequence</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_SequenceValid" code="268451859">
+			<description>A sequence passed validation</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_SequenceTimeout" code="268451860">
+			<description>A sequence passed validation</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_CmdStepped" code="268451861">
+			<description>A command in a sequence was stepped through</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_CmdStarted" code="268451862">
+			<description>A manual sequence was started</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_JoinWaiting" code="268451863">
+			<description>Wait for the current running sequence file complete</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_JoinWaitingNotComplete" code="268451864">
+			<description>Cannot run new sequence when current sequence file is still running.</description>
+		</evr>
+		<evr name="HelloWorldDeployment.cmdSeq.CS_NoRecords" code="268451865"/>
+		<evr name="HelloWorldDeployment.helloWorld.Hello" code="268455937">
+			<description>Greeting event with maximum greeting length of 20 characters</description>
+		</evr>
+	</evr_definitions>
+</evr_dictionary>

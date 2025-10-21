@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 import argparse
 import json
+import json2xml
 import os
 import csv
 from datetime import datetime
 
-
-
 def main():
+
+    # ~/dev/fprime % vi ./MyProject/build-artifacts/Darwin/Myproject_HelloWorldDeployment/dict/HelloWorldDeploymentTopologyDictionary.json
 
     parser = argparse.ArgumentParser(description='Integration')
     parser.add_argument(

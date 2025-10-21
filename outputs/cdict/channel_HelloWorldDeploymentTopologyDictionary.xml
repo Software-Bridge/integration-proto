@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel_dictionary>
+	<header mission_name="HelloWorldDeployment.HelloWorldDeployment" version="1.0.0" schema_version="1.0"/>
+	<channel_definitions>
+		<channel name="CdhCore.cmdDisp.CommandsDispatched" id="16777216">
+			<description>Number of commands dispatched</description>
+		</channel>
+		<channel name="CdhCore.cmdDisp.CommandErrors" id="16777217">
+			<description>Number of command errors</description>
+		</channel>
+		<channel name="CdhCore.health.PingLateWarnings" id="16785408">
+			<description>Number of overrun warnings</description>
+		</channel>
+		<channel name="CdhCore.version.FrameworkVersion" id="16789504">
+			<description>Software framework version</description>
+		</channel>
+		<channel name="CdhCore.version.ProjectVersion" id="16789505">
+			<description>Software project version</description>
+		</channel>
+		<channel name="CdhCore.version.CustomVersion01" id="16789506">
+			<description>Custom Versions</description>
+		</channel>
+		<channel name="CdhCore.version.CustomVersion02" id="16789507"/>
+		<channel name="CdhCore.version.CustomVersion03" id="16789508"/>
+		<channel name="CdhCore.version.CustomVersion04" id="16789509"/>
+		<channel name="CdhCore.version.CustomVersion05" id="16789510"/>
+		<channel name="CdhCore.version.CustomVersion06" id="16789511"/>
+		<channel name="CdhCore.version.CustomVersion07" id="16789512"/>
+		<channel name="CdhCore.version.CustomVersion08" id="16789513"/>
+		<channel name="CdhCore.version.CustomVersion09" id="16789514"/>
+		<channel name="CdhCore.version.CustomVersion10" id="16789515"/>
+		<channel name="CdhCore.version.LibraryVersion01" id="16789516">
+			<description>Library Versions</description>
+		</channel>
+		<channel name="CdhCore.version.LibraryVersion02" id="16789517"/>
+		<channel name="CdhCore.version.LibraryVersion03" id="16789518"/>
+		<channel name="CdhCore.version.LibraryVersion04" id="16789519"/>
+		<channel name="CdhCore.version.LibraryVersion05" id="16789520"/>
+		<channel name="CdhCore.version.LibraryVersion06" id="16789521"/>
+		<channel name="CdhCore.version.LibraryVersion07" id="16789522"/>
+		<channel name="CdhCore.version.LibraryVersion08" id="16789523"/>
+		<channel name="CdhCore.version.LibraryVersion09" id="16789524"/>
+		<channel name="CdhCore.version.LibraryVersion10" id="16789525"/>
+		<channel name="ComCcsds.comQueue.comQueueDepth" id="33554432">
+			<description>Depth of queues of Fw::ComBuffer type</description>
+		</channel>
+		<channel name="ComCcsds.comQueue.buffQueueDepth" id="33554433">
+			<description>Depth of queues of Fw::Buffer type</description>
+		</channel>
+		<channel name="ComCcsds.commsBufferManager.TotalBuffs" id="33562624">
+			<description>The total buffers allocated</description>
+		</channel>
+		<channel name="ComCcsds.commsBufferManager.CurrBuffs" id="33562625">
+			<description>The current number of allocated buffers</description>
+		</channel>
+		<channel name="ComCcsds.commsBufferManager.HiBuffs" id="33562626">
+			<description>The high water mark of allocated buffers</description>
+		</channel>
+		<channel name="ComCcsds.commsBufferManager.NoBuffs" id="33562627">
+			<description>The number of requests that couldn't return a buffer</description>
+		</channel>
+		<channel name="ComCcsds.commsBufferManager.EmptyBuffs" id="33562628">
+			<description>The number of empty buffers returned</description>
+		</channel>
+		<channel name="DataProducts.dpCat.CatalogDps" id="67108864">
+			<description>Number of data products in catalog</description>
+		</channel>
+		<channel name="DataProducts.dpCat.DpsSent" id="67108865">
+			<description>Number of data products sent</description>
+		</channel>
+		<channel name="DataProducts.dpMgr.NumSuccessfulAllocations" id="67112960">
+			<description>The number of successful buffer allocations</description>
+		</channel>
+		<channel name="DataProducts.dpMgr.NumFailedAllocations" id="67112961">
+			<description>The number of failed buffer allocations</description>
+		</channel>
+		<channel name="DataProducts.dpMgr.NumDataProducts" id="67112962">
+			<description>Number of data products handled</description>
+		</channel>
+		<channel name="DataProducts.dpMgr.NumBytes" id="67112963">
+			<description>Number of bytes handled</description>
+		</channel>
+		<channel name="DataProducts.dpWriter.NumBuffersReceived" id="67117056">
+			<description>The number of buffers received</description>
+		</channel>
+		<channel name="DataProducts.dpWriter.NumBytesWritten" id="67117057">
+			<description>The number of bytes written</description>
+		</channel>
+		<channel name="DataProducts.dpWriter.NumSuccessfulWrites" id="67117058">
+			<description>The number of successful writes</description>
+		</channel>
+		<channel name="DataProducts.dpWriter.NumFailedWrites" id="67117059">
+			<description>The number of failed writes</description>
+		</channel>
+		<channel name="DataProducts.dpWriter.NumErrors" id="67117060">
+			<description>The number of errors</description>
+		</channel>
+		<channel name="DataProducts.dpBufferManager.TotalBuffs" id="67121152">
+			<description>The total buffers allocated</description>
+		</channel>
+		<channel name="DataProducts.dpBufferManager.CurrBuffs" id="67121153">
+			<description>The current number of allocated buffers</description>
+		</channel>
+		<channel name="DataProducts.dpBufferManager.HiBuffs" id="67121154">
+			<description>The high water mark of allocated buffers</description>
+		</channel>
+		<channel name="DataProducts.dpBufferManager.NoBuffs" id="67121155">
+			<description>The number of requests that couldn't return a buffer</description>
+		</channel>
+		<channel name="DataProducts.dpBufferManager.EmptyBuffs" id="67121156">
+			<description>The number of empty buffers returned</description>
+		</channel>
+		<channel name="FileHandling.fileUplink.FilesReceived" id="83886080">
+			<description>The total number of complete files received</description>
+		</channel>
+		<channel name="FileHandling.fileUplink.PacketsReceived" id="83886081">
+			<description>The total number of packets received</description>
+		</channel>
+		<channel name="FileHandling.fileUplink.Warnings" id="83886082">
+			<description>The total number of warnings issued</description>
+		</channel>
+		<channel name="FileHandling.fileDownlink.FilesSent" id="83890176">
+			<description>The total number of files sent</description>
+		</channel>
+		<channel name="FileHandling.fileDownlink.PacketsSent" id="83890177">
+			<description>The total number of packets sent</description>
+		</channel>
+		<channel name="FileHandling.fileDownlink.Warnings" id="83890178">
+			<description>The total number of warnings</description>
+		</channel>
+		<channel name="FileHandling.fileManager.CommandsExecuted" id="83894272">
+			<description>The total number of commands successfully executed</description>
+		</channel>
+		<channel name="FileHandling.fileManager.Errors" id="83894273">
+			<description>The total number of errors</description>
+		</channel>
+		<channel name="HelloWorldDeployment.rateGroup1.RgMaxTime" id="268439552" format="{} us">
+			<description>Max execution time rate group</description>
+		</channel>
+		<channel name="HelloWorldDeployment.rateGroup1.RgCycleSlips" id="268439553">
+			<description>Cycle slips for rate group</description>
+		</channel>
+		<channel name="HelloWorldDeployment.rateGroup2.RgMaxTime" id="268443648" format="{} us">
+			<description>Max execution time rate group</description>
+		</channel>
+		<channel name="HelloWorldDeployment.rateGroup2.RgCycleSlips" id="268443649">
+			<description>Cycle slips for rate group</description>
+		</channel>
+		<channel name="HelloWorldDeployment.rateGroup3.RgMaxTime" id="268447744" format="{} us">
+			<description>Max execution time rate group</description>
+		</channel>
+		<channel name="HelloWorldDeployment.rateGroup3.RgCycleSlips" id="268447745">
+			<description>Cycle slips for rate group</description>
+		</channel>
+		<channel name="HelloWorldDeployment.cmdSeq.CS_LoadCommands" id="268451840">
+			<description>The number of Load commands executed</description>
+		</channel>
+		<channel name="HelloWorldDeployment.cmdSeq.CS_CancelCommands" id="268451841">
+			<description>The number of Cancel commands executed</description>
+		</channel>
+		<channel name="HelloWorldDeployment.cmdSeq.CS_Errors" id="268451842">
+			<description>The number of errors that have occurred</description>
+		</channel>
+		<channel name="HelloWorldDeployment.cmdSeq.CS_CommandsExecuted" id="268451843">
+			<description>The number of commands executed across all sequences.</description>
+		</channel>
+		<channel name="HelloWorldDeployment.cmdSeq.CS_SequencesCompleted" id="268451844">
+			<description>The number of sequences completed.</description>
+		</channel>
+		<channel name="HelloWorldDeployment.helloWorld.GreetingCount" id="268455937">
+			<description>A count of the number of greetings issued</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.MEMORY_TOTAL" id="268509184" format="{} KB">
+			<description>Total system memory in KB</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.MEMORY_USED" id="268509185" format="{} KB">
+			<description>System memory used in KB</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.NON_VOLATILE_TOTAL" id="268509186" format="{} KB">
+			<description>System non-volatile available in KB</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.NON_VOLATILE_FREE" id="268509187" format="{} KB">
+			<description>System non-volatile available in KB</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU" id="268509188" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_00" id="268509189" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_01" id="268509190" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_02" id="268509191" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_03" id="268509192" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_04" id="268509193" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_05" id="268509194" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_06" id="268509195" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_07" id="268509196" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_08" id="268509197" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_09" id="268509198" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_10" id="268509199" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_11" id="268509200" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_12" id="268509201" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_13" id="268509202" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_14" id="268509203" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+		<channel name="HelloWorldDeployment.systemResources.CPU_15" id="268509204" format="{.2f} percent">
+			<description>System's CPU Percentage</description>
+		</channel>
+	</channel_definitions>
+</channel_dictionary>

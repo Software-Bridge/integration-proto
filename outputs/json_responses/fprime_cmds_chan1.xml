@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<True>
+	<root type="dict">
+		<item type="list">
+			<item type="dict">
+				<time type="str">2025-10-03T08:40:53.218673</time>
+				<raw_time type="str">(2(0)-1759506053:218673)</raw_time>
+				<name type="str">CdhCore.cmdDisp.CommandsDispatched</name>
+				<id type="int">16777216</id>
+				<display_text type="int">42</display_text>
+			</item>
+			<item type="dict">
+				<time type="str">2025-10-03T08:40:54.249809</time>
+				<raw_time type="str">(2(0)-1759506054:249809)</raw_time>
+				<name type="str">CdhCore.cmdDisp.CommandsDispatched</name>
+				<id type="int">16777216</id>
+				<display_text type="int">47</display_text>
+			</item>
+			<item type="dict">
+				<time type="str">2025-10-03T08:40:54.621256</time>
+				<raw_time type="str">(2(0)-1759506054:621256)</raw_time>
+				<name type="str">CdhCore.cmdDisp.CommandsDispatched</name>
+				<id type="int">16777216</id>
+				<display_text type="int">49</display_text>
+			</item>
+		</item>
+	</root>
+</True>
