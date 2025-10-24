@@ -663,6 +663,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description='Convert JSON dictionary to AMPCS XML dictionaries (commands, telemetryChannels, events)')
     parser.add_argument('-i', '--input', required=True, help='Input JSON dict file')
     parser.add_argument('-o', '--outdir', default=os.path.join('outputs', 'cdict'), help='Output directory')
+    parser.add_argument('-n', '--max-commands', type=int, default=0, help='Maximum number of command blocks to write (0 = all)')
     parser.add_argument('--command-rnc', default=DEFAULT_COMMAND_RNC, help='Path to CommandDictionary.rnc (informational)')
     parser.add_argument('--channel-rnc', default=DEFAULT_CHANNEL_RNC, help='Path to ChannelDictionary.rnc (informational)')
     args = parser.parse_args(argv)
@@ -681,7 +682,10 @@ def main(argv=None):
 
     written = []
     if commands:
-        obj = build_command_dictionary(data, ensure_list(commands))
+        cmd_list = ensure_list(commands)
+        if args.max_commands and args.max_commands > 0:
+            cmd_list = cmd_list[:args.max_commands]
+        obj = build_command_dictionary(data, cmd_list)
         p = os.path.join(args.outdir, f'command_{base}.xml')
         write_xml(obj, p); written.append(p)
 
